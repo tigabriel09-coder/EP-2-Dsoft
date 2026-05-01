@@ -92,9 +92,9 @@ def calcula_pontos_full_house(dados):
     return 0
 
 def calcula_pontos_quadra(dados):
-    contagem = {}
+    contagem = {}  #dic
     
-    for dado in dados:
+    for dado in dados:  
         if dado in contagem:
             contagem[dado] += 1
         else:
