@@ -42,3 +42,14 @@ def calcula_pontos_soma(dados):
     for dado in dados:
         total += dado
     return total 
+def calcula_pontos_sequencia_baixa(dados):
+    conjunto = set(dados)
+    
+    if 1 in conjunto and 2 in conjunto and 3 in conjunto and 4 in conjunto:
+        return 15
+    if 2 in conjunto and 3 in conjunto and 4 in conjunto and 5 in conjunto:
+        return 15
+    if 3 in conjunto and 4 in conjunto and 5 in conjunto and 6 in conjunto:
+        return 15
+    
+    return 0
