@@ -134,4 +134,4 @@ def calcula_pontos_regra_avancada(dados):
         'quadra': calcula_pontos_quadra(dados),
         'sem_combinacao': calcula_pontos_soma(dados),
         'sequencia_alta': calcula_pontos_sequencia_alta(dados),
-        'sequencia_baixa': calcula_pontos_sequencia_baixa(dados)}
+        'sequencia_baixa': calcula_pontos_sequencia_baixa(dados)} #sem necessidade de definir e depois retornar, direto no return funciona
