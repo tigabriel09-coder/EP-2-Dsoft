@@ -54,3 +54,14 @@ def calcula_pontos_sequencia_baixa(dados):
         return 15
     
     return 0
+
+def calcula_pontos_sequencia_alta(dados):
+    conjunto = set(dados)
+    
+    if (1 in conjunto and 2 in conjunto and 3 in conjunto and 4 in conjunto and 5 in conjunto):
+        return 30
+    
+    if (2 in conjunto and 3 in conjunto and 4 in conjunto and 5 in conjunto and 6 in conjunto):
+        return 30
+    
+    return 0
