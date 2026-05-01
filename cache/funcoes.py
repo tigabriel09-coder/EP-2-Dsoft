@@ -127,7 +127,7 @@ def calcula_pontos_quina(dados):
     
     return 0
 
-def calcula_pontos_regra_avancada(dados):
+def calcula_pontos_regra_avancado(dados):  
     return {
         'cinco_iguais': calcula_pontos_quina(dados),
         'full_house': calcula_pontos_full_house(dados),
