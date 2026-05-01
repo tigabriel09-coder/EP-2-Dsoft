@@ -127,11 +127,15 @@ def calcula_pontos_quina(dados):
     
     return 0
 
-def calcula_pontos_regra_avancado(dados):  
+def calcula_pontos_regra_avancada(dados):
     return {
         'cinco_iguais': calcula_pontos_quina(dados),
         'full_house': calcula_pontos_full_house(dados),
         'quadra': calcula_pontos_quadra(dados),
         'sem_combinacao': calcula_pontos_soma(dados),
         'sequencia_alta': calcula_pontos_sequencia_alta(dados),
-        'sequencia_baixa': calcula_pontos_sequencia_baixa(dados)} #sem necessidade de definir e depois retornar, direto no return funciona
+        'sequencia_baixa': calcula_pontos_sequencia_baixa(dados)
+    }
+#sem necessidade de definir e depois retornar, direto no return funciona
+
+print(calcula_pontos_regra_avancada([4, 4, 4, 4, 4]))
