@@ -112,3 +112,17 @@ def calcula_pontos_quadra(dados):
         return total
     
     return 0
+
+def calcula_pontos_quina(dados):
+    contagem = {}
+    for dado in dados: # contar ocorrências
+        if dado in contagem:
+            contagem[dado] += 1
+        else:
+            contagem[dado] = 1
+    
+    for numero in contagem:
+        if contagem[numero] >= 5:
+            return 50
+    
+    return 0
