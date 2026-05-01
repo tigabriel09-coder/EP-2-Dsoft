@@ -24,8 +24,7 @@ def remover_dado(dados_rolados, dados_no_estoque, dado_para_remover):
     
     dados_rolados.append(dado)
     dados_no_estoque = (
-        dados_no_estoque[:dado_para_remover] +
-        dados_no_estoque[dado_para_remover + 1:])
+        dados_no_estoque[:dado_para_remover] + dados_no_estoque[dado_para_remover + 1:])
     
     return [dados_rolados, dados_no_estoque]
 def calcula_pontos_regra_simples(dados):
