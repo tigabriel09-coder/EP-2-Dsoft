@@ -43,7 +43,7 @@ def calcula_pontos_soma(dados):
         total += dado
     return total 
 def calcula_pontos_sequencia_baixa(dados):
-    conjunto = set(dados)
+    conjunto = set(dados) #resolve repetições
     
     if 1 in conjunto and 2 in conjunto and 3 in conjunto and 4 in conjunto:
         return 15
