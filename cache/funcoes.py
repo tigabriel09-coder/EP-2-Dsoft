@@ -85,6 +85,9 @@ def calcula_pontos_full_house(dados):
             tem_dois = True
     
     if tem_tres and tem_dois:
-        return sum(dados)
+        total = 0
+        for dado in dados:
+            total += dado
+        return total
     
     return 0
