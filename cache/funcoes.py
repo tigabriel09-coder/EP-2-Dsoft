@@ -65,3 +65,28 @@ def calcula_pontos_sequencia_alta(dados):
         return 30
     
     return 0
+
+def calcula_pontos_full_house(dados):
+    contagem = {}
+    
+    # contar ocorrências
+    for dado in dados:
+        if dado in contagem:
+            contagem[dado] += 1
+        else:
+            contagem[dado] = 1
+    
+    tem_tres = False
+    tem_dois = False
+    
+    # verificar as quantidades
+    for numero in contagem:
+        if contagem[numero] == 3:
+            tem_tres = True
+        elif contagem[numero] == 2:
+            tem_dois = True
+    
+    if tem_tres and tem_dois:
+        return sum(dados)
+    
+    return 0
