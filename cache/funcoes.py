@@ -1,4 +1,3 @@
-
 import random
 
 def rolar_dados(qtd):
